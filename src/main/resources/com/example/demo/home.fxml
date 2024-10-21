@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HomeController">
+   <children>
+      <Button layoutX="224.0" layoutY="260.0" mnemonicParsing="false" onAction="#entryPage" prefHeight="26.0" prefWidth="202.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Text layoutX="139.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Fitness Tracker">
+         <font>
+            <Font name="Bitstream Arrus Black BT" size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="lbltitle" layoutX="139.0" layoutY="126.0" prefHeight="26.0" prefWidth="78.0" text="Title:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="318.0" mnemonicParsing="false" onAction="#progressReport" prefWidth="232.0" text="Generate Report" textAlignment="CENTER" textFill="#3fa627">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutX="25.0" layoutY="92.0" prefHeight="2.0" prefWidth="546.0" />
+      <TextField fx:id="txt_title" layoutX="224.0" layoutY="127.0" prefHeight="26.0" prefWidth="202.0" promptText="Enter title" />
+      <Label fx:id="lblDuration" layoutX="139.0" layoutY="173.0" prefHeight="26.0" prefWidth="78.0" text="Duration:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_duration" layoutX="224.0" layoutY="173.0" prefHeight="26.0" prefWidth="202.0" promptText="Example: 2 hours" />
+      <Label fx:id="lblDate" layoutX="139.0" layoutY="222.0" prefHeight="26.0" prefWidth="78.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txt_date" layoutX="225.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" promptText="mm-dd-yyyy" />
+   </children>
+</AnchorPane>
